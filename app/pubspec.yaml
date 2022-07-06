@@ -10,14 +10,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.2
+  package1:
+    path: ../package1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  lint:
+    path: ../lint
 
 flutter:
   uses-material-design: true

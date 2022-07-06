@@ -1,11 +1,11 @@
-name: package_1
+name: package1
 publish_to: 'none'
 environment:
   sdk: ">=2.17.1 <3.0.0"
 
 dependencies:
-  lint:
-    path: ../lint
 
 dev_dependencies:
   flutter_lints: ^2.0.0
+  lint:
+    path: ../lint

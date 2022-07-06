@@ -1,12 +1,11 @@
-name: lint
+name: lint_loader
 publish_to: 'none' 
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
 
-dependencies:
-  analyzer: 4.2.0
-  analyzer_plugin: 0.11.0
-
 dev_dependencies:
   flutter_lints: ^2.0.0
+  lint:
+  # /Users/macUser/Documents/analyzer_plugin_bug/lint
+    path: yourPath
