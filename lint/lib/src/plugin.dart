@@ -25,7 +25,8 @@ class LintPlugin extends ServerPlugin {
   @override
   Future<void> analyzeFile(
       {required AnalysisContext analysisContext, required String path}) async {
-    if (path.endsWith('test_function2.dart')) {
+    final isAnalyzed = analysisContext.contextRoot.isAnalyzed(path);
+    if (isAnalyzed && path.endsWith('test_function2.dart')) {
       final info = [
         'hashCode: $hashCode',
         'contexts: $_contexts',
